@@ -2,6 +2,8 @@ require "../rosegold"
 require "./control/*"
 
 class Rosegold::Bot
+  include LuaCallable
+
   private getter client : Client
 
   getter inventory : Inventory

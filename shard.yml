@@ -17,6 +17,8 @@ dependencies:
   openssl_ext:
     github: spider-gazelle/openssl_ext
     version: ~> 2.0
+  lua:
+    github: veelenga/lua.cr
 
 development_dependencies:
   ameba:
@@ -27,3 +29,7 @@ development_dependencies:
   spectator:
     github: icy-arctic-fox/spectator
     version: ~> 0.10
+
+targets:
+  cli:
+    main: src/cli.cr
